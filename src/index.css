@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme (default) */
+    --background: 220 33% 98%;
+    --foreground: 240 10% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+    
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 5.9% 10%;
+    
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 56%;
+    
+    --accent: 220 79% 72%;
+    --accent-foreground: 240 5.9% 10%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 5% 88%;
+    --input: 240 5% 88%;
+    --ring: 240 5% 65%;
+
+    --theme-neon: 220 79% 72%; /* Soft blue */
+    --theme-accent: 236 96% 92%; /* Pastel blue */
+    --theme-muted: 240 5% 96%; /* Soft grey */
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 15% 12%;
+    --foreground: 220 15% 95%;
+    
+    --card: 240 15% 15%;
+    --card-foreground: 220 15% 95%;
+    
+    --popover: 240 15% 15%;
+    --popover-foreground: 210 15% 95%;
+    
+    --primary: 220 15% 95%;
+    --primary-foreground: 240 10% 10%;
+    
+    --secondary: 240 15% 20%;
+    --secondary-foreground: 210 15% 95%;
+    
+    --muted: 240 15% 20%;
+    --muted-foreground: 240 10% 70%;
+    
+    --accent: 178 85% 57%; /* Neon cyan */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 15% 25%;
+    --input: 240 15% 25%;
+    --ring: 240 10% 60%;
+
+    --theme-neon: 178 85% 57%; /* Neon cyan */
+    --theme-accent: 300 85% 65%; /* Neon pink */
+    --theme-muted: 240 15% 20%; /* Dark muted */
+  }
+
+  .read {
+    --background: 0 0% 99%;
+    --foreground: 0 0% 10%;
+    
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 10%;
+    
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 10%;
+    
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 99%;
+    
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+    
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    
+    --accent: 0 0% 60%;
+    --accent-foreground: 0 0% 10%;
+    
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 70%;
+
+    --theme-neon: 0 0% 60%; /* Grey */
+    --theme-accent: 0 0% 25%; /* Dark grey */
+    --theme-muted: 0 0% 90%; /* Light grey */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-xl shadow-md;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-md bg-black/30 border border-white/10;
+  }
+
+  .glass-light {
+    @apply backdrop-blur-md bg-white/70 border border-black/5;
+  }
+
+  .glass-read {
+    @apply backdrop-blur-md bg-gray-100/90 border border-gray-200;
+  }
+
+  .neon-border {
+    @apply border-2 border-theme-neon;
+  }
+
+  .neon-glow {
+    @apply shadow-[0_0_8px_2px_hsl(var(--theme-neon))];
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_15px_rgba(var(--theme-neon),0.5)];
+  }
+}
