@@ -35,7 +35,7 @@ export function Hero() {
           </Button>
           
           <Button size="lg" variant="outline" className="hover-lift group" asChild>
-            <a href="/SuryaTejaKoka_Resume.pdf" download>
+            <a href="/portfolio/SuryaTejaKoka_Resume.pdf" download>
               <Download className="mr-2 h-5 w-5 group-hover:text-theme-neon" />
               Download Resume
             </a>
