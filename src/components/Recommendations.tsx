@@ -22,13 +22,13 @@ const recommendations: Recommendation[] = [
   //   text: "Surya's technical expertise and communication skills made him invaluable to our team. He translates complex concepts into simple solutions.",
   //   linkedin: "https://www.linkedin.com/in/koteshmukkamala/"
   // },
-  // {
-  //   name: "Reddy Bhupathi",
-  //   title: "Vice President, Solutions Engineering",
-  //   company: "ByteBridge",
-  //   text: "Surya's proactive nature in handling DevSecOps and cloud infrastructure made our environment at ConcertoCard much more secure and efficient",
-  //   linkedin: "https://www.linkedin.com/in/reddybhupathi/"
-  // },
+  {
+    name: "Reddy Bhupathi",
+    title: "Vice President, Solutions Engineering",
+    company: "ByteBridge",
+    text: "Surya's proactive nature in handling DevSecOps and cloud infrastructure made our environment at ConcertoCard much more secure and efficient",
+    linkedin: "https://www.linkedin.com/in/reddybhupathi/"
+  },
   {
     name: "Sreedhar V",
     title: "Senior Software Manager",

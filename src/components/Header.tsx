@@ -23,12 +23,6 @@ export function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="hover-lift" asChild>
-              <a href="#resume">
-                <Download className="mr-2 h-4 w-4" />
-                Resume
-              </a>
-            </Button>
             <ThemeSwitcher />
           </div>
         </div>
