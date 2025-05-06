@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
+import { profile } from ''
 
 export function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -20,6 +21,13 @@ export function Hero() {
         "container relative z-10 mx-auto px-4 flex flex-col items-center text-center",
         isLoaded ? "animate-fade-in" : "opacity-0"
       )}>
+        <img
+          src="/portfolio/profile.png"
+          alt="Surya Teja Koka"
+          style={{ width: "180px", height: "180px" }}
+          className="rounded-full mb-6 border-4 border-theme-neon shadow-lg transition-transform hover:scale-105 object-cover"
+        />
+
         <h1 className="font-heading font-bold text-4xl md:text-6xl lg:text-7xl mb-6 tracking-tight">
           <span className="block">Surya Teja Koka</span>
           <span className="text-theme-neon">Software Engineer</span>
