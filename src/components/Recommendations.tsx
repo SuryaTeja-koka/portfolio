@@ -35,21 +35,24 @@ const recommendations: Recommendation[] = [
     title: "Senior Software Manager",
     company: "Nokia (EX-Samsung)",
     text: "Surya is an exceptional developer with a keen eye for detail. His ability to solve complex problems and deliver high-quality code is remarkable.",
-    linkedin: "https://www.linkedin.com/in/sreedhar-reddy-vundela/"
+    linkedin: "https://www.linkedin.com/in/sreedhar-reddy-vundela/",
+    image:"https://media.licdn.com/dms/image/v2/D5603AQEhuZCPIThwgg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700209703713?e=1752105600&v=beta&t=b6ftICzVPafDcZGEajaxWs40Re7zEJGD0f5-E6IQ_lk"
   },
   {
     name: "Prahlada Herle",
     title: "Senior Principal Member of Technical Staff",
     company: "Altiostar, A Rakuten Symphony Company (EX-CommScope)",
     text: "Surya consistently delivers production-ready code with clean architecture and best practices. His understanding of Python, backend frameworks and Django is great.",
-    linkedin: "https://www.linkedin.com/in/prahlada-herle/"
+    linkedin: "https://www.linkedin.com/in/prahlada-herle/",
+    image:"https://media.licdn.com/dms/image/v2/C4D03AQFXz6rLrwhKCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516999433507?e=1752105600&v=beta&t=P2s6OEvFsOHl8v4vAWSrdkO45dzvKvFb8OLZ3sZMT5k"
   },
   {
     name: "Rajesh Seemakurthi",
     title: "Data Scientist",
     company: "InspyreTek Solutions",
     text: "Surya is a rare mix of deep technical knowledge and the ability to explain it clearly. A true asset for any engineering team.",
-    linkedin: "https://www.linkedin.com/in/rajeshdata/"
+    linkedin: "https://www.linkedin.com/in/rajeshdata/",
+    image:""
   }
 ];
 
