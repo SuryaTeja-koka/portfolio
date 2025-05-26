@@ -20,8 +20,24 @@ export default defineConfig({
     include: ['lucide-react'],
   },
   build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom'],
+          'ui': ['lucide-react'],
+        },
+      },
+    },
     commonjsOptions: {
       include: [/lucide-react/, /node_modules/],
+    },
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
     },
   },
 });
