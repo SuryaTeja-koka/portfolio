@@ -1,9 +1,8 @@
-
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
-import { profile } from ''
+import { TypeAnimation } from 'react-type-animation';
 
 export function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,9 +32,24 @@ export function Hero() {
           <span className="text-theme-neon">Software Engineer</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-10">
-          Crafting Code, Creating Magic
-        </p>
+        <div className="h-16 mb-6">
+          <TypeAnimation
+            sequence={[
+              'Code.',
+              1000,
+              'Secure.',
+              1000,
+              'Educate.',
+              1000,
+              'Repeat.',
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            className="text-xl md:text-2xl text-theme-neon font-semibold"
+          />
+        </div>
         
         <div className="flex flex-col sm:flex-row gap-4">
           <Button size="lg" className="glass-card hover-lift neon-border" asChild>

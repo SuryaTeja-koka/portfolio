@@ -12,7 +12,8 @@ import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Shield, Bot, GraduationCap, Globe, Code2, Database, Cloud, Lock } from 'lucide-react';
+import { Shield, Bot, GraduationCap, Globe, Code2, Database, Cloud, Lock, Download } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 
 const projects = {
   security: [
@@ -77,7 +78,7 @@ const projects = {
 const currentEngagements = [
   {
     title: 'TuringIQ',
-    role: 'AI Solutions Architect',
+    role: 'SDE 2 | AI Solutions Architect',
     description: 'Designed and developed a modern, responsive website showcasing AI solutions and services, featuring interactive elements and seamless user experience',
     link: 'https://turingiq.ai/',
     technologies: ['AI/ML', 'LLMs', 'Cloud', 'FastAPI'],
@@ -93,7 +94,7 @@ const currentEngagements = [
   },
   {
     title: 'Lakeshore LLC',
-    role: 'Freelance Developer & Consultant',
+    role: 'Freelance Developer & Technical Consultant',
     description: 'Developed a professional corporate website with custom features, responsive design, and optimized performance for better user engagement',
     link: 'https://www.lakeshoreitllc.com/',
     technologies: ['Web Development', 'Consulting', 'UI/UX'],
