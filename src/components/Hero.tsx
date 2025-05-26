@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
+import { Download, ArrowRight, ArrowLeft, ArrowDownRight, ArrowUpLeft } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 
 export function Hero() {
@@ -27,29 +27,47 @@ export function Hero() {
           className="rounded-full mb-6 border-4 border-theme-neon shadow-lg transition-transform hover:scale-105 object-cover"
         />
 
-        <h1 className="font-heading font-bold text-4xl md:text-6xl lg:text-7xl mb-6 tracking-tight">
-          <span className="block">Surya Teja Koka</span>
-          <span className="text-theme-neon">Software Engineer</span>
+        <h1 className="font-heading font-bold text-4xl md:text-6xl lg:text-7xl mb-4 tracking-tight">
+          Surya Teja Koka
         </h1>
-        
-        <div className="h-16 mb-6">
+
+        {/* Animated Roles */}
+        <div className="h-20 flex flex-col items-center justify-center">
           <TypeAnimation
             sequence={[
-              'Code.',
-              1000,
-              'Secure.',
-              1000,
-              'Educate.',
-              1000,
-              'Repeat.',
-              1000,
+              'Software Engineer',
+              2000,
+              'Data Governance & Security Specialist',
+              2000,
+              'Python Developer',
+              2000,
+              'Instructor',
+              2000,
+              'Technical Consultant',
+              2000,
             ]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
-            className="text-xl md:text-2xl text-theme-neon font-semibold"
+            className="text-2xl md:text-3xl text-theme-neon font-semibold"
           />
         </div>
+        
+        {/* Tagline loop */}
+        {/* <div className="mt-4 mb-8 text-muted-foreground text-sm grid grid-cols-3 grid-rows-3 gap-x-2 gap-y-1 items-center justify-items-center w-full max-w-xs mx-auto">
+          <span className="col-start-1 col-end-2 justify-self-end">Code</span>
+          <ArrowRight className="w-4 h-4 animate-pulse col-start-2 col-end-3" />
+          <span className="col-start-3 col-end-4 justify-self-start">Secure</span>
+          <ArrowUpLeft className="w-4 h-4 animate-pulse col-start-1 col-end-2 justify-self-end" />
+          <ArrowDownRight className="w-4 h-4 animate-pulse col-start-3 col-end-4 justify-self-start" />
+          <span className="col-start-1 col-end-2 justify-self-end">Repeat</span>
+          <ArrowLeft className="w-4 h-4 animate-pulse col-start-2 col-end-3" />
+          <span className="col-start-3 col-end-4 justify-self-start">Educate</span>
+        </div> */}
+
+        <p className="text-lg md:text-l text-muted-foreground mb-8 max-w-2xl">
+          Building secure, scalable solutions through clean code and innovative thinking
+        </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
           <Button size="lg" className="glass-card hover-lift neon-border" asChild>
