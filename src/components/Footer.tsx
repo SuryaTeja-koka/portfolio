@@ -40,10 +40,10 @@ export function Footer() {
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Surya Teja K. All rights reserved.
           </p>
-          
+{/*           
           <div className="flex items-center space-x-6">
             <ThemeSwitcher />
-          </div>
+          </div> */}
           
         </div>
       </div>
