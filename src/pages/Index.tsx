@@ -71,6 +71,20 @@ const projects = {
       link: 'https://www.columbuscoffeehouse.com/',
       technologies: ['React', 'TypeScript', 'E-commerce', 'UI/UX'],
       icon: <Globe className="w-6 h-6" />, status: 'active'
+    },
+    {
+      title: 'Nalaland',
+      description: 'Full-featured e-commerce platform for camping and adventure gear',
+      link: 'https://www.nalaland.in/',
+      technologies: ['Web Development', 'UI/UX', 'E-commerce'],
+      icon: <Globe className="w-6 h-6" />, status: 'active'
+    },
+    {
+      title: 'Lakeshore LLC',
+      description: 'Professional corporate website with custom features and responsive design',
+      link: 'https://www.lakeshoreitllc.com/',
+      technologies: ['Web Development', 'Consulting', 'UI/UX'],
+      icon: <Database className="w-6 h-6" />, status: 'active'
     }
   ]
 };
@@ -83,22 +97,6 @@ const currentEngagements = [
     link: 'https://turingiq.ai/',
     technologies: ['AI/ML', 'LLMs', 'Cloud', 'FastAPI'],
     icon: <Cloud className="w-6 h-6" />
-  },
-  {
-    title: 'Nalaland',
-    role: 'Technical Consultant',
-    description: 'Built and maintain a full-featured e-commerce platform for camping and adventure gear, implementing modern UI/UX practices and secure payment integrations',
-    link: 'https://www.nalaland.in/',
-    technologies: ['Web Development', 'UI/UX', 'E-commerce'],
-    icon: <Globe className="w-6 h-6" />
-  },
-  {
-    title: 'Lakeshore LLC',
-    role: 'Freelance Developer & Technical Consultant',
-    description: 'Developed a professional corporate website with custom features, responsive design, and optimized performance for better user engagement',
-    link: 'https://www.lakeshoreitllc.com/',
-    technologies: ['Web Development', 'Consulting', 'UI/UX'],
-    icon: <Database className="w-6 h-6" />
   }
 ];
 
